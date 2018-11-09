@@ -1,0 +1,48 @@
+
+span#jisuanqi {
+    font: small 楷体;
+}
+input#first {
+    text-align: right;
+    color: black;
+    background-color: antiquewhite;
+}
+input#second {
+    text-align: right;
+    color: black;
+    background-color: antiquewhite;
+}
+input#result {
+    text-align: right;
+    color: black;
+    background-color: antiquewhite;
+}
+b#starm {
+    color: red;
+    font-size: small;
+}
+b#stary {
+    font-size: small;
+    color: red;
+}
+
+
+*{
+  margin:1px;
+  padding:0;
+}
+.box{
+  margin-left: 0px;
+  margin-top: 0px;
+  color: lightcyan;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  background: indianred;
+}
+.content p{
+  display:inline-block;
+}
+.content p.padding{
+  padding-right: 300px;
+}

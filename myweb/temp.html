@@ -1,0 +1,85 @@
+<html>
+<meta charset="UTF-8">
+<title>港桥新城社区</title>
+<head>
+<link rel="stylesheet" type="text/css" href="tempcss.css"/>
+</head>
+
+<body>
+
+<div class="box">
+    <div class="content">
+        <p class="text">***本镇最大社交网站欢迎您！***寻人寻亲寻友启事公告广告招聘咨询服务贷款***商务事宜请联系助理(微信):dongdongwoshishi</p>
+    </div>
+</div>
+<br>
+<span id="jisuanqi">+_*/计算器</span>
+<input type="text" size="8" id="first" placeholder="0">
+<select id="mym">
+    <option id="add" value="add">+</option>
+    <option id="minus" value="minus">-</option>
+    <option id="multiply" value="multiply">*</option>
+    <option id="divided" value="divided">/</option>
+</select>
+<input type="text" size="8" id="second" placeholder="0">
+<button onclick="getResult()"><b>等于</b></button>
+<input type="text" size="14" id="result">
+<button onclick="clear()">清除</button>
+<br>
+<br>
+
+<span style="border-style: dashed">
+    <strong style="color: red;font-size: small;" >寻人寻亲寻友启事广告</strong>
+</span>
+<table>
+    <tr>
+        <td align="center" style="font-size: small">
+            被寻者
+        </td>
+        <td align="center" style="font-size: small">
+            描述
+        </td>
+        <td align="center" style="font-size: small">
+            寻人者联系方式
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="font-size: small">
+            马之云
+        </td>
+        <td align="center" style="font-size: small">
+            阿里巴巴与四十大盗
+        </td>
+        <td align="center" style="font-size: small">
+            微信号:555hhhhhh
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<div>
+    <strong id="jianyi" style="font-size: small">联系我们或留言:</strong>
+    <form id="jianyineirong" style="font-size: small">
+        联系方式<b id="stary" style="color: orangered">*</b>：<input type="text" name="youxiang" placeholder="微信号或手机号"><br>
+        被寻人名<b id="starm" style="color: orangered">*</b>：<input type="text" name="name" placeholder="被寻人的名字"><br>
+        <textarea cols="47" rows="10" style="font-size: small" placeholder="寻人描述或留言内容："></textarea>
+        <br>
+        <button onclick="">提交</button> <button onclick="">重置</button>
+    </form>
+</div>
+
+
+
+
+
+
+</body>
+
+
+<script src="js.js"></script>
+
+
+</html>
