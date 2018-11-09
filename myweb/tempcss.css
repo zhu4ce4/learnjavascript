@@ -1,60 +1,88 @@
 
-span#jisuanqi {
-    font: small 楷体;
-}
-input#first {
+input#first,input#second,input#result {
     text-align: right;
     color: black;
     background-color: antiquewhite;
 }
-input#second {
-    text-align: right;
-    color: black;
-    background-color: antiquewhite;
-}
-input#result {
-    text-align: right;
-    color: black;
-    background-color: antiquewhite;
-}
-b#starm {
-    color: red;
-    font-size: small;
-}
-b#stary {
-    font-size: small;
-    color: red;
-}
-
 
 *{
     margin:1px;
     padding:0;
 }
+
 .box{
-    margin-left: 0px;
-    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 0;
+    margin-top: 0;
     color: lightcyan;
     white-space: nowrap;
     overflow: hidden;
-    width: 100%;
+    /*width: 100%;*/
     background: indianred;
 }
+
+td{
+    text-align: center;
+}
 .box2{
-    margin-left: 0px;
-    margin-top: 0px;
-    color: lightcyan;
-    white-space: nowrap;
-    overflow: hidden;
+    background-image: url("zt1.jpg");
     width: 100%;
-    background: white;
+    background-size: contain;
+    margin-left: 0;
+    margin-top: 0;
+    /*color: lightcyan;*/
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    /*background: white;*/
+}
+#subao td{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: black;
+    font: normal bold large "Times New Roman";
+}
+
+#toutiao{
+    padding-right: 5px;
+    font: normal bold large "Times New Roman"
+}
+
+#foot *{
+    display: inline;
+}
+#foot{
+    text-align: center;
+}
+
+#logo {
+    text-align: left;
+    font-size: large;
+    /*padding-top: 0;*/
+
+    /*margin-right: auto;*/
+}
+
+.box3{
+    padding-top: 20px;
+    width: 50%;
+    line-height:120%;
+}
+.box3 tr:nth-child(odd) {
+    background: gray;
+    color: floralwhite;
+}
+.box3 tr:nth-child(even) {
+    background:#d9d9d9;
 }
 
 .content p{
     display:inline-block;
 }
 .content p.padding{
-    padding-right: 300px;
+    padding: 3px 200px;
 }
 
-
+a#luntan{
+    text-decoration: none;
+}

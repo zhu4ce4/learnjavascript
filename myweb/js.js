@@ -26,11 +26,10 @@ function getResult() {
 }
 function clear() {
     //todo 清除失败!
-    console.log(998);
     var fir = document.getElementById('first');
     fir.value = '';
-    document.getElementById('second').value=0;
-    document.getElementById('result').value=0;
+    document.getElementById('second').value='';
+    document.getElementById('result').value='';
 }
 
 
@@ -54,4 +53,5 @@ function toScrollLeft(){
         box.scrollLeft++;
         setTimeout('toScrollLeft()', 40);
 }
+
 
