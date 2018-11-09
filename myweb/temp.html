@@ -1,37 +1,92 @@
 <html>
 <meta charset="UTF-8">
-<title>港桥新城社区</title>
+<title>港桥新城网事</title>
 <head>
-<link rel="stylesheet" type="text/css" href="tempcss.css"/>
+    <link rel="stylesheet" type="text/css" href="tempcss.css"/>
+
 </head>
 
 <body>
 
-<div class="box">
+<div class="box" style="margin-right: 1px">
     <div class="content">
-        <p class="text">***本镇最大社交网站欢迎您！***寻人寻亲寻友启事公告广告招聘咨询服务贷款***商务事宜请联系助理(微信):dongdongwoshishi</p>
+        <p class="text">***本港最大社交网站 港桥新城往事 欢迎您!！***寻人寻亲寻友启事公告广告招聘咨询服务贷款***商务事宜请联系助理(微信):dongdongwoshishi</p>
     </div>
 </div>
+<hr>
+<div class="box2" style="margin-right: 1px">
+    <img width="50%" src="gq.jpg" align="left"/>
+    <img width="40%" src="zt1.jpg" align="left"/>
+</div>
+<hr>
+
+<div>
+    <h2 align="left" style="margin-left: 10px;">本港今日头条：<i>小面要涨价了！</i></h2>
+</div>
+<h3 align="center" style="margin-left: 1%">
+    <span>猪肉价格一路上涨!</span>
+    <span>某餐厅火锅推荐！</span>
+    <span>谁家的小狗掉沟里了?</span>
+    <span>猫狗大战斗鸡比赛明日开战</span><!--todo:换成上下翻滚-->
+</h3>
+<hr/>
+<table cellSpacing=0 cellPadding=0 width="100%" border=0>
+    <tr bgcolor="#87cefa">
+        <td align=left width=40><span style="margin-left: 1px;">速报</span></td>
+        <td align=left width=400><span style="margin-left: 10px;">CPI连续4个月猪肉价格下行;</span></td>
+        <td align=left width=400><span style="margin-left: 5px;">李克强鼓励专家企业家：敞开说 此处无禁忌</span></td>
+        <td id="datetimenow" style="margin-right: 10px;"></td>
+        <td style="margin-right: 10px;">今天天气：晴</td>
+
+    </tr>
+</table>
+<hr/>
+<script>
+    var intYears, intMonths, intDays, intHours, intMinutes;
+    var today;
+    today = new Date(); //系统当前时间
+    intYears = today.getFullYear(); //得到年份,getFullYear()比getYear()更普适
+    intMonths = today.getMonth() + 1; //得到月份，要加1
+    intDays = today.getDate(); //得到日期
+    if (intDays < 10) {
+        intDays  = '0' + intDays ;
+    }
+    intHours = today.getHours(); //得到小时
+    if (intHours < 10) {
+        intHours = '0' + intHours;
+    }
+    intMinutes = today.getMinutes(); //得到分钟
+    if (intMinutes < 10) {
+        intMinutes= '0' + intMinutes;
+    }
+    document.getElementById('datetimenow').innerHTML = "当前时间：" + intYears + '年' + intMonths + '月' + intDays + '日' + intHours + ':' + intMinutes;
+</script>
+
 <br>
-<span id="jisuanqi">+_*/计算器</span>
-<input type="text" size="8" id="first" placeholder="0">
+<span id="jisuanqi">+_*/计算器
+<input type="text" size="4" id="first" placeholder="0">
 <select id="mym">
     <option id="add" value="add">+</option>
     <option id="minus" value="minus">-</option>
     <option id="multiply" value="multiply">*</option>
     <option id="divided" value="divided">/</option>
 </select>
-<input type="text" size="8" id="second" placeholder="0">
+<input type="text" size="4" id="second" placeholder="0">
 <button onclick="getResult()"><b>等于</b></button>
-<input type="text" size="14" id="result">
+<input type="text" size="5" id="result">
 <button onclick="clear()">清除</button>
+    </span>
+
 <br>
 <br>
 
-<span style="border-style: dashed">
-    <strong style="color: red;font-size: small;" >寻人寻亲寻友启事广告</strong>
-</span>
-<table>
+
+<table width="40%">
+    <tr>
+        <td></td>
+        <td align="center"><strong style="color: red;">寻人寻亲寻友启事广告</strong></td><!--TODO：做成上下翻飞的-->
+        <td></td>
+    </tr>
     <tr>
         <td align="center" style="font-size: small">
             被寻者
@@ -67,13 +122,10 @@
         被寻人名<b id="starm" style="color: orangered">*</b>：<input type="text" name="name" placeholder="被寻人的名字"><br>
         <textarea cols="47" rows="10" style="font-size: small" placeholder="寻人描述或留言内容："></textarea>
         <br>
-        <button onclick="">提交</button> <button onclick="">重置</button>
+        <button onclick="">提交</button>
+        <button onclick="">重置</button>
     </form>
 </div>
-
-
-
-
 
 
 </body>

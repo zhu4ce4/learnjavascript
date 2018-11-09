@@ -1,4 +1,3 @@
-
 function getResult() {
     var first = parseFloat(document.getElementById('first').value); //获取到的是string需要转换!
     var second = parseFloat(document.getElementById('second').value);
@@ -25,7 +24,6 @@ function getResult() {
         document.getElementById('result').value = first / second;
     }
 }
-
 function clear() {
     //todo 清除失败!
     console.log(998);
@@ -54,5 +52,14 @@ window.onload = function checkScrollLeft() {
 };
 function toScrollLeft(){
         box.scrollLeft++;
-        setTimeout('toScrollLeft()', 25);
+        setTimeout('toScrollLeft()', 40);
+}
+
+function getTime() {
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var date = now.getDate();
+    document.getElementById("datetime").innerText = '今天是:' + year + '年' + (month + 1) + '月' + date+'日';
+    document.getElementById("weather").innerText= '今天天气：晴';
 }

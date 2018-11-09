@@ -28,21 +28,33 @@ b#stary {
 
 
 *{
-  margin:1px;
-  padding:0;
+    margin:1px;
+    padding:0;
 }
 .box{
-  margin-left: 0px;
-  margin-top: 0px;
-  color: lightcyan;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  background: indianred;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: lightcyan;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    background: indianred;
 }
+.box2{
+    margin-left: 0px;
+    margin-top: 0px;
+    color: lightcyan;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    background: white;
+}
+
 .content p{
-  display:inline-block;
+    display:inline-block;
 }
 .content p.padding{
-  padding-right: 300px;
+    padding-right: 300px;
 }
+
+
