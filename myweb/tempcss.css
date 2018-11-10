@@ -48,20 +48,17 @@ td{
     font: normal bold large "Times New Roman"
 }
 
-#foot *{
-    display: inline;
-}
-#foot{
-    text-align: center;
+#footgognshang,#footbeizhu{
+    float: left;
 }
 
-#logo {
-    text-align: left;
+#logo1,#logo2,#logo3,#logo4 {
+    float: left;
     font-size: large;
-    /*padding-top: 0;*/
-
-    /*margin-right: auto;*/
 }
+/*#logo5{*/
+    /*float: right;*/
+/*}*/
 
 .box3{
     padding-top: 20px;
