@@ -26,13 +26,13 @@ td{
     text-align: center;
 }
 .box2{
-    background-image: url("zt1.jpg");
+    background-image: url("icon/zt1.jpg");
     width: 100%;
     background-size: contain;
     margin-left: 0;
     margin-top: 0;
     /*color: lightcyan;*/
-    /*white-space: nowrap;*/
+    white-space: nowrap;
     overflow: hidden;
     /*background: white;*/
 }
@@ -48,8 +48,11 @@ td{
     font: normal bold large "Times New Roman"
 }
 
-#footgognshang,#footbeizhu{
+#footgognshang,#footbeizhu,#jisuanqi{
     float: left;
+}
+#lixijisuanqi {
+    float: right;
 }
 
 #logo1,#logo2,#logo3,#logo4 {

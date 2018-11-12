@@ -2,11 +2,11 @@ function getResult() {
     var first = parseFloat(document.getElementById('first').value); //获取到的是string需要转换!
     var second = parseFloat(document.getElementById('second').value);
 
-    var selected=document.getElementById('mym');
+    var selected = document.getElementById('mym');
     var index = selected.selectedIndex;
-    var option=selected.options[index].value;
+    var option = selected.options[index].value;
 
-    if (isNaN(first)|| isNaN(second)){
+    if (isNaN(first) || isNaN(second)) {
         alert("请输入数据后再计算!");
         return;
     }
@@ -24,12 +24,12 @@ function getResult() {
         document.getElementById('result').value = first / second;
     }
 }
-function clear() {
+
+function resetInput() {
     //todo 清除失败!
-    var fir = document.getElementById('first');
-    fir.value = '';
-    document.getElementById('second').value='';
-    document.getElementById('result').value='';
+    document.getElementById('first').value = '';
+    document.getElementById('second').value = '';
+    document.getElementById('result').value = '';
 }
 
 
@@ -43,15 +43,38 @@ let [textWidth, boxWidth] = [
     box.offsetWidth
 ];
 window.onload = function checkScrollLeft() {
-        content.innerHTML += content.innerHTML;
-        document.querySelector('.text').classList.add('padding');
-        // 更新
-        textWidth = document.querySelector('.text').offsetWidth;
-        toScrollLeft()
+    content.innerHTML += content.innerHTML;
+    document.querySelector('.text').classList.add('padding');
+    // 更新
+    textWidth = document.querySelector('.text').offsetWidth;
+    toScrollLeft()
 };
-function toScrollLeft(){
-        box.scrollLeft++;
-        setTimeout('toScrollLeft()', 40);
+
+function toScrollLeft() {
+    box.scrollLeft++;
+    setTimeout('toScrollLeft()', 40);
 }
 
 
+function compute() {
+    const qishimoney = parseFloat(document.getElementById('origin').value);
+    const rate = parseFloat(document.getElementById('rate').value);
+    var years = parseInt(document.getElementById('years').value);
+    const appendmoney = parseFloat(document.getElementById('benjin').value);
+
+    var benjinhe = qishimoney + appendmoney * years;
+    document.getElementById('amountOfBenjin').value = benjinhe;
+
+    var benxihe = qishimoney;
+    var lixi = 0;
+    var lixihe = 0;
+
+    while (years > 0) {
+        lixi = (benxihe + appendmoney) * (rate / 100);
+        lixihe += lixi;
+        benxihe += appendmoney + lixi;
+        years--;
+    }
+    document.getElementById('lixihe').value = lixihe.toFixed(2);
+    document.getElementById('benxihe').value = benxihe.toFixed(2);
+}
